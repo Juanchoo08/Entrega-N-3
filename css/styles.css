@@ -2,9 +2,10 @@
     margin: 0;
 }
 
-body{
-    background-color: #ddc;
+body, main{
+    background-color: #D7CEC7;
 }
+
 /*--------------------------------------------------------- Header ------------------------------------------------------- */
 header{
     height: 60px;
@@ -12,19 +13,29 @@ header{
 }
 
 /*--------------------------------------------------------- Navbar ------------------------------------------------------- */
-a{
-    margin: 0 5px;
-    border-radius: 5px;
+.navbar {
+    position: relative;
+    z-index: 1050;
 }
 
 /*--------------------------------------------------------- Main --------------------------------------------------------- */
 main{
-    background-color: #D7CEC7;
-    height: 85vh;
+    height: 80vh;
+}
+
+.centrar, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen{
+    height: 40vh;
 }
 
 /*--------------------------------------------------------- Footer ------------------------------------------------------- */
 footer{
-    background-color: #edc;
-    height: 10vh;
+    height: 12vh;
+    position: absolute;
+    bottom: 0;
 }
