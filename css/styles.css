@@ -18,9 +18,14 @@ header{
     z-index: 1050;
 }
 
+img:hover {
+    transform: scale(1.1);
+}
+
+
 /*--------------------------------------------------------- Main --------------------------------------------------------- */
 main{
-    height: 80vh;
+    height: 100vh;
 }
 
 .centrar, footer{
@@ -35,7 +40,54 @@ main{
 
 /*--------------------------------------------------------- Footer ------------------------------------------------------- */
 footer{
-    height: 12vh;
-    position: absolute;
+    position: relative;
     bottom: 0;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.container-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.item-footer{
+    padding-inline: 10px;
+}
+
+/*--------------------------------------------------- Boton Flotante ----------------------------------------------------- */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    border-radius: 50%;
+}
+
+.boton {
+    width: 48px;
+    height: 48px;   
+}
+
+@media (max-width: 700px){
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .item-medio{
+        border-inline: 0 black solid !important;
+        border-block: 2px black solid;
+    }
 }
