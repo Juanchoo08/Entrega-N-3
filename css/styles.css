@@ -34,7 +34,7 @@ main{
     align-items: center;
 }
 
-.centrar, .contacto, aside{
+.centrar, .contacto, aside, .tarjeta{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,6 +98,7 @@ section{
 
 .tarjeta{
     border: 2px #0004 solid;
+    border-radius: 8px;
     margin: 20px;
     background-color: #eeeeca;
 }
