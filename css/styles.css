@@ -18,14 +18,14 @@ header{
     z-index: 1050;
 }
 
-img:hover {
-    transform: scale(1.1);
+img:hover, .item-sn:hover{
+    transform: scale(1.09);
 }
 
 
 /*--------------------------------------------------------- Main --------------------------------------------------------- */
 main{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .centrar, footer, .contacto-centrar{
@@ -34,7 +34,7 @@ main{
     align-items: center;
 }
 
-.contacto-centrar, .contacto{
+.centrar, .contacto, aside{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,11 +43,19 @@ main{
 
 .contacto{
     width: 40%;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+.item-sn{
+    width: 90%;
+    padding-block: 10px;
     background-color: beige;
 }
 
 .input{
     width: 60%;
+    border-radius: 10px;
     background-color: #ddc;
     padding-block: 10px;
     margin-block: 10px;
@@ -55,6 +63,43 @@ main{
 
 .imagen{
     height: 40vh;
+}
+/*--------------------------------------------------------- Sidebar -------------------------------------------------------*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+aside{
+    margin: 50px;
+    padding: 10px;
+    height: 60%;
+    width: 100%;
+    background-color: #50d2;
+}
+
+section{
+    margin: 50px;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: #00f2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.filtro{    
+    margin-block: 2px;
+    width: 100%;
+    height: 100%;
+    background-color: #50d1;
+}
+
+.tarjeta{
+    border: 2px #0004 solid;
+    margin: 20px;
+    background-color: #eeeeca;
 }
 
 /*--------------------------------------------------------- Footer ------------------------------------------------------- */
@@ -99,8 +144,9 @@ ul{
     height: 48px;   
 }
 
+/*--------------------------------------------------- Media Queries ----------------------------------------------------- */
 @media (max-width: 850px){
-    .container-footer{
+    .container-footer, .input{
         display: flex;
         flex-direction: column;
 
@@ -109,7 +155,14 @@ ul{
         border-inline: 0 black solid !important;
         border-block: 2px black solid;
     }
-    .contacto{
-        width: 90%;
+    .contacto, .input{
+        width: 80%;
+    }
+    .input{
+        justify-content: center;
+        align-items: center;
+    }
+    .item-sn:hover{
+        transform: scale(1.04);
     }
 }
