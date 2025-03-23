@@ -34,12 +34,23 @@ main{
     align-items: center;
 }
 
-.contacto{
-    height: 40%;
-    width: 40%;
-    background-color: beige;
+.contacto-centrar, .contacto{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto{
+    width: 40%;
+    background-color: beige;
+}
+
+.input{
+    width: 60%;
+    background-color: #ddc;
+    padding-block: 10px;
+    margin-block: 10px;
 }
 
 .imagen{
@@ -88,7 +99,7 @@ ul{
     height: 48px;   
 }
 
-@media (max-width: 700px){
+@media (max-width: 850px){
     .container-footer{
         display: flex;
         flex-direction: column;
@@ -97,5 +108,8 @@ ul{
     .item-medio{
         border-inline: 0 black solid !important;
         border-block: 2px black solid;
+    }
+    .contacto{
+        width: 90%;
     }
 }

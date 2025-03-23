@@ -43,13 +43,28 @@
   </header>
 <!--------------------------------------------------------- Main ----------------------------------------------------------->
     <main class="contacto-centrar" style="height: 80vh;">
-        <div class="contacto">
-          <input type="text">
-          <input type="text">
-          <input type="text">
-          <input type="text">
-          <input type="text">
-      </div>
+      <h1>Contacto</h1>
+      <form class="contacto" action="/submit" method="post">
+        <div class="input">
+          <label for="nombre" style="padding: 5px;">Nombre:</label>
+          <input type="text" name="nombre" id="nombre">
+        </div>
+        <div class="input">
+          <label for="email" style="padding: 5px;">E-mail:</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="input">
+          <label for="mensaje" style="padding: 5px;">Mensaje:</label>
+          <textarea name="mensaje" id="mensaje"></textarea>
+        </div>
+        <div class="input">
+          <label for="terminos-y-condiciones" style="padding: 5px;">Acepto los terminos y condiciones</label>
+          <input type="checkbox" name="terminos-y-condiciones" id="terminos-y-condiciones">
+        </div>
+        <div href="#" class="input" style="display: flex; justify-content: center; width: 20%;">
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
     </main>
 <!--------------------------------------------------------- Footer --------------------------------------------------------->
     <footer class= "border border-dark bg-warning-subtle col-12" style="display: flex; flex-direction: column;">
@@ -68,7 +83,7 @@
           <h5>Acerca de PC Tienda</h5>
           <ul>
             <li>
-            <a href="html/sobre-nosotros.html" style="text-decoration: underline; color: #00d;">SOBRE NOSOTROS</a>
+            <a href="sobre-nosotros.html" style="text-decoration: underline; color: #00d;">SOBRE NOSOTROS</a>
             </li>
             <li>
             <a href="#">UBICACION</a>
@@ -82,7 +97,7 @@
             <h5>Contactanos</h5>
             <ul>
             <li>
-              <a href="html/contacto.html" style="text-decoration: underline; color: #00d;">CONTACTO</a>
+              <a href="contacto.html" style="text-decoration: underline; color: #00d;">CONTACTO</a>
             </li>
             <li>
               <a href="#">a</a>
