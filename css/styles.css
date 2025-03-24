@@ -28,13 +28,7 @@ main{
     min-height: 100vh;
 }
 
-.centrar, footer, .contacto-centrar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.centrar, .contacto, aside, .tarjeta{
+footer, .centrar, .contacto, aside, .tarjeta{
     display: flex;
     flex-direction: column;
     justify-content: center;
