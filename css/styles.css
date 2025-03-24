@@ -70,14 +70,8 @@ main{
     color: black;
 }
 
-.link:hover{
+.link:hover, p{
     font-weight: 1000;
-}
-
-.imagen{
-    height: 50%;
-    width: 50%;
-    transform: none;
 }
 
 /*---------------------------------------------------- Sidebar y section --------------------------------------------------*/
@@ -115,6 +109,16 @@ section{
     border-radius: 3px;
     margin: 20px;
     background-color: #eeeecaee;
+}
+
+.imagen{
+    height: 40%;
+    width: 40%;
+    transform: none;
+}
+
+p{
+    font-size: 12px;
 }
 
 /*--------------------------------------------------------- Footer ------------------------------------------------------- */
@@ -185,6 +189,9 @@ ul{
     aside{
         height: 25%;
     }
+    p{
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 767px){
@@ -193,6 +200,9 @@ ul{
     }
     aside{
         height: 13%;
+    }
+    p{
+        font-size: 15px;
     }
 }
 
@@ -210,5 +220,8 @@ ul{
     }
     .tarjeta{
         margin: 10px;
+    }
+    p{
+        font-size: 16px;
     }
 }
