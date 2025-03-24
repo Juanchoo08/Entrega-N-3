@@ -165,6 +165,9 @@ ul{
 
 /*--------------------------------------------------- Media Queries ----------------------------------------------------- */
 @media (max-width: 900px){
+    h6, .slide-content{
+        font-size: 0;
+    }
     .container-footer, .input{
         display: flex;
         flex-direction: column;
