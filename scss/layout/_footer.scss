@@ -1,0 +1,30 @@
+@import '../abstracts/placeholder';
+
+/* Footer */
+footer{
+    @extend %flex-center;
+    position: relative;
+    bottom: 0;
+}
+
+div{
+    a{
+        color: #000;
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+}
+
+
+.container-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    .item-footer{
+        padding-inline: 50px;
+    }
+}

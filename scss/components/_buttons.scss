@@ -1,0 +1,13 @@
+@import '../abstracts/mixin';
+
+/* Boton Flotante */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    border-radius: 50%;
+    .boton {
+        @include wid-hei (48px, 48px);   
+    }
+}

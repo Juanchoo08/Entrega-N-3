@@ -1,0 +1,35 @@
+/* Laptop */
+@media (max-width: 900px) {
+    h6, .slide-content{
+        font-size: 0;
+    }
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .item-medio{
+        border-inline: 0 black solid !important;
+        border-block: 2px black solid;
+    }
+    .contacto{
+        width: 80%;
+    }
+    .input{
+        @extend .container-footer;
+        @extend .contacto;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-sn:hover{
+        transform: scale(1.04);
+    }
+    section{
+        grid-template-columns: 1fr 1fr;
+    }
+    aside{
+        height: 25%;
+    }
+    p{
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,20 @@
+@import '../abstracts/mixin';
+
+/* Mobile */
+@media (max-width: 576px){
+    .grid{
+        @include grid (1fr, 0);
+        aside{
+            @include wid-hei (80%, 90%);
+        }
+        section{
+            margin: 20px;
+        }
+    }
+    .tarjeta{
+        margin: 10px;
+    }
+    p{
+        font-size: 16px;
+    }
+}

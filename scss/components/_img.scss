@@ -1,0 +1,16 @@
+@import '../abstracts/mixin';
+
+/* Imagenes */
+img:hover{
+    transform: scale(1.09);
+}
+
+.item-sn:hover{
+    @extend img;
+}
+
+.imagen{
+    height: 40vh;
+    @include wid-hei (40%, 40%);
+    transform: none;
+}

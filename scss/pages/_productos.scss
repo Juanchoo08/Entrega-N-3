@@ -1,0 +1,44 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixin';
+@import '../abstracts/placeholder';
+
+/* Sidebar & Section */
+
+.grid {
+    @include grid (1fr 3fr, 50px);
+}
+
+aside{
+    @extend %flex-center;
+    @include mar-pad (50px, 10px);
+    @include wid-hei (100%, 35%);
+}
+
+section{
+    margin: 50px;
+    background-color: $sectionColor;
+    @include grid (repeat(3, 1fr), 5px);
+}
+
+.filtro{
+    margin-block: 2px;
+    @include wid-hei (100%, 100%);
+    background-color: $filtroColor;
+}
+
+.tarjeta{
+    @extend %flex-center;
+    border: 2px #0004 solid;
+    border-radius: 3px;
+    margin: 20px;
+    background-color: $tarjetaColor;
+}
+
+.link:hover {
+    @extend %font-weight;
+}
+
+p {
+    @extend %font-weight;
+    font-size: 12px;
+}

@@ -1,0 +1,14 @@
+@import '../abstracts/variables';
+
+/* Reset */
+* {
+    margin: 0;
+}
+
+body{
+    background-color: $mainColor;
+    main{
+        @extend body;
+        min-height: 100vh;
+    }
+}

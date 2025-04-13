@@ -1,0 +1,16 @@
+@import '../abstracts/placeholder';
+@import '../abstracts/variables';
+
+.contacto {
+    @extend %flex-center;
+    width: 40%;
+    border-radius: 10px;
+    background-color: $contactoColor;
+    .input {
+        width: 60%;
+        border-radius: 10px;
+        background-color: $inputColor;
+        padding-block: 10px;
+        margin-block: 10px;
+    }
+}
