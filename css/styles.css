@@ -186,7 +186,7 @@ p {
     align-items: center;
   }
   .item-sn:hover {
-    transform: scale(1.04);
+    transform: none;
   }
   section {
     grid-template-columns: 1fr 1fr;
